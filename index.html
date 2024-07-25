@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Style/Portfolio.css">
+    
+    <script src="https://kit.fontawesome.com/84efaacad3.js" crossorigin="anonymous"></script>
+    <link class="facion" rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+<!-------------------------------------- Header ------------------------------------------>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Abhishek Jain</span> <br> from Manav Rachna Univers<span class="university">ity</span></h1>
+            </div>
+        </div>
+    </div>
+
+<!---------------------------- About -------------------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user-2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>                    
+                    <p>I am a passionate Software Engineer currently working at Codsoft as a Intern. Here, I work majorly on Docker, Kubernetes, Terraform, AWS, CI/CD and automations. Prior to this, I am interned in working on HTML, CSS, Java, JavaScript, Spring Boot, etc. I also enjoy Problem Solving(Data Structures and Algorithms) and love experimenting with new technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages:</span><br>C++/C, Python, Java, MySQL, HTML, CSS, JavaScript</li>
+                            <li><span>Frameworks/Environments:</span><br>Nodejs, MongoDB, Express, Reactjs, Nextjs</li>
+                            <li><span>Other Tools and Utilities:</span><br>Data Structures, Algorithms, Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-25</span><br>B.tech CSE from MRU Faridabad.</li>
+                            <li><span>2020-21</span><br>12th from MRIS sec-14 Faridabad.</li>
+                            <li><span>2018-19</span><br>10th from MRIS sec-14 Faridabad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------ Serices -------------------------------------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp-duotone fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design involves creating the visual elements and layout of a website,coding involves translating these designs into a functional website.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI designers work on individual pages, buttons, and interactions.UX designers take a more high-level view of a product and services.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design is an ongoing process of creating user experience (UX) and user interface (UI) elements for your application. The first step in the mobile app design process.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!----------------------------------------------Protfolio---------------------------------------------------------------------->
+
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Social media is a collective term for websites and applications that focus on communication, community-based input, interaction, content-sharing and collaboration.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>My Music is an offline music player with adding and sharing music. It offers you free, unlimited access to Apple Music Library, Browse, Google Drive and many more.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Mobile commerce (or m-commerce) describes purchasing from an online retailer's mobile device-optimized website or software application ("app").</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!----------------------- Contact Form Footer ---------------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>abhishekjain3327@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8700XXXXXX</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/abhishekjain1754/?next=%2F"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abhishek-jain-27975323a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                    <a href="images/my-resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Abhishek.Made with by <i class="fa-solid fa-heart heart"></i> Abhishek Jain</p>
+        </div>
+    </div>
+
+<!---------------------------- Javascript ------------------------------------------>
+    <script src="/Script/Portfolio.js"></script>    
+</body>
+</html>
